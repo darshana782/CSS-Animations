@@ -1,0 +1,84 @@
+body{
+	display: flex;
+	min-height: 100vh;
+	margin: 0;
+	top: 0;
+	justify-content: center;
+	align-items: center;
+	background: #202020;
+	font-family: arial;
+}
+a{
+	display: inline-block;
+	padding: 20px 30px;
+	letter-spacing: 5px;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	overflow: hidden;
+	position: relative;
+	transition: 0.2s;
+	color: #aaff00;
+}
+a:hover{
+	background: #aaff00;
+	color: #202020;
+	box-shadow: 0px 0px 10px #aaff00,
+				0px 0px 40px #aaff00,
+				0px 0px 80px #aaff00;
+	transition-delay: 1s;			
+}
+a span{
+	position: absolute;
+	display: block;
+}
+a span:nth-child(1){
+	top: 0;
+	left: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#aaff00);
+}
+a:hover span:nth-child(1){
+	left: 100%;
+	transition:1s;
+}
+
+a span:nth-child(2){
+	top: -100%;
+	right: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(180deg,transparent,#aaff00);
+}
+a:hover span:nth-child(2){
+	top: 100%;
+	transition:1s;
+	transition-delay: 0.25s;
+}
+
+a span:nth-child(3){
+	bottom: 0;
+	right: -100%;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(270deg,transparent,#aaff00);
+}
+a:hover span:nth-child(3){
+	right: 100%;
+	transition:1s;
+	transition-delay: 0.5s;
+}
+
+a span:nth-child(4){
+	bottom: -100%;
+	left: 0;
+	width: 2px;
+	height: 100%;
+	background: linear-gradient(360deg,transparent,#aaff00);
+}
+a:hover span:nth-child(4){
+	bottom: 100%;
+	transition:1s;
+	transition-delay: 0.75s;
+}
