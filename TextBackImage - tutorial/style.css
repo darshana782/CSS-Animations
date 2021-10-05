@@ -1,0 +1,19 @@
+body{
+	display: flex;
+	margin: 0;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	font-family: arial;
+	background: #303030;
+}
+div{
+	max-width: 100%;
+	font-weight: bold;
+	font-size: 35em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	-webkit-background-clip:text;
+	-webkit-text-fill-color:transparent;
+	background-image: url(image.jpg);
+}
