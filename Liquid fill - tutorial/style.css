@@ -1,0 +1,65 @@
+body{
+	background: #282828;
+	margin: 0;
+}
+dir{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+.cup{
+	position: absolute;
+	background: white;
+	padding: 200px;
+	top: 20%;
+	height: 10%;
+	left: 30%;
+	border-radius: 2% 2% 10% 10%;
+}
+.inner{
+	position: absolute;
+	background: aqua;
+	top: 20px;
+	bottom: 20px;
+	left: 20px;
+	right: 20px;
+	border-radius: 2% 2% 10% 10%;
+	overflow: hidden;
+}
+.inner2{
+	position: absolute;
+	background: #282828;
+	top: -60px;
+	bottom: -80px;
+	left: -100px;
+	right: -100px;
+	box-shadow: inset 0 0 10px aqua,
+				inset 0 0 20px aqua;
+	border-radius: 40% 45% 40% 50%;	
+	animation: animate 15s linear infinite;
+}
+.handle{
+	position: absolute;
+	padding: 75px;
+	height: 25%;
+	background: white;
+	left: 55%;
+	top: 25%;
+	border-radius: 15% 30% 90% 0;
+}
+.handle_in{
+	position: absolute;
+	background: #282828;
+	top: 35px;
+	bottom: 35px;
+	right: 35px;
+	left: 10px;
+	border-radius: 15% 30% 90% 0;
+}
+@keyframes animate{
+	0%{
+		transform: translateY(0px) rotate(0deg);
+	}100%{
+		transform: translateY(-550px) rotate(720deg);
+	}
+}
