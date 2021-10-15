@@ -1,0 +1,68 @@
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+	min-height: 100vh;
+	font-family: arial;
+	background: black;
+}
+a{
+	position: absolute;
+	text-decoration: none;
+	color: #b500c9;
+	border: 1px solid #b500c9;
+	padding: 20px 30px;
+	font-size: 5em;
+	transition: 0.5s;
+	text-transform: uppercase;
+	overflow: hidden;
+}
+.one,.two{
+	position: absolute;
+	background: url(wave.png);
+	padding: 100px 100px;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	transition: 0.5s;
+	mix-blend-mode: screen;
+}
+.one{
+	opacity: 0.2;
+	animation: anim 4s linear infinite;
+}
+.two{
+	opacity: 0.4;
+	animation: animate 3s linear infinite;
+}
+@keyframes anim{
+	0%{
+		background-position: 0px;
+	}100%{
+		background-position: 1280px;
+	}
+}
+@keyframes animate{
+	0%{
+		background-position: 1280px;
+	}100%{
+		background-position: 0px;
+	}
+}
+a:hover{
+	box-shadow: 0 0 10px #b500c9,
+				0 0 20px #b500c9,
+				0 0 50px #b500c9;
+	text-shadow: 0 0 1px #ed9ff5,
+				0 0 3px #ed9ff5,
+				0 0 5px #ed9ff5;
+	color: #ed9ff5;						
+}
+a:hover .one{
+	top: -120%
+}
+a:hover .two{
+	top: -120%
+}
