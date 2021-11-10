@@ -1,0 +1,65 @@
+body{
+	display: flex;
+	min-height: 100vh;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	top: 0;
+	background: #202020;
+}
+
+.button{
+	position: absolute; 
+	background: linear-gradient(#ff7700,#a2ff00,#00ffea,#8c00ff,#ff00fb,#ccff00); 
+	display: block; 
+	overflow:hidden; 
+	padding: 150px; 
+	border-radius: 50%;
+	transition: 0.4s;
+}
+
+.button:hover{
+	box-shadow: 0px 0px 10px #ff7700,
+				0px 0px 20px #a2ff00,
+				0px 0px 30px #00ffea,
+				0px 0px 40px #8c00ff,
+				0px 0px 50px #ff00fb,				 
+				0px 0px 60px #ccff00;
+	animation: anim 0.001s linear infinite;
+	cursor: pointer;	
+
+}
+
+.button:hover .button_container{
+	transform: scale(0.1);
+}
+
+.button_container{
+	box-shadow: inset 0px 0px 10px #ff7700,
+				inset 0px 0px 20px #a2ff00,
+				inset 0px 0px 30px #00ffea,
+				inset 0px 0px 40px #8c00ff,
+				inset 0px 0px 50px #ff00fb,				 
+				inset 0px 0px 60px #ccff00;
+	position: absolute;
+	left: 10px;
+	overflow: hidden;
+	top: 10px;
+	bottom: 10px;
+	right: 10px;
+	background: #202020;
+	filter: blur(10px;);
+	border-radius: 50%;
+	transition: 0.4s;
+}
+
+
+@keyframes anim{
+	0%{
+		transform: rotate(0deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
